@@ -1,17 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import { AiFillHome, AiOutlineFile } from 'react-icons/ai'
+import {GiDonut} from "react-icons/gi"
 
 const CreateDonut = () => {
   return (
    <section className='fixed flex items-center justify-center top-0 left-0 w-full h-screen bg-black z-50 bg-opacity-50'>
     <div className='w-full mt-[80px] mb-[40px] bg-white shadow-lg rounded-md py-6 md:px-10 px-4 max-w-screen-xl'>
     <div>
-      <h2>Share A Donut</h2>
+      <h2 className='text-center text-4xl'>Share A Donut</h2>
       
     </div>
     <div className='mt-8 md:flex gap-6'> 
     <label
-    className='            md:mx-0
+    className='md:mx-0
     mx-auto
     mt-4
     mb-6
@@ -53,11 +55,11 @@ const CreateDonut = () => {
 </select>
     <div className='flex gap-3 justify-center'>
     <Link 
-    className='mt-8 px-10 py-2.5 mt-8 border text-[16px] hover:bg-gray-100 rounded-sm'
-    href={'/'}>Home</Link>
+    className='mt-8 btn pl-8 pr-8'
+    href={'/'}>Home <AiFillHome style={{fontSize: "34px"}}/></Link>
     <button
-    className='mt-8 px-10 py-2.5 mt-8 border text-[16px] hover:bg-gray-100 rounded-smmt-6 px-10 py-2.5 mt-8 border text-[16px] hover:bg-gray-100 rounded-sm'
-    >Post Donut</button>
+    className='mt-8 btn'
+    >Post Donut <GiDonut style={{fontSize: "44px", color: "pink"}} /></button>
     </div>
     </div>
 

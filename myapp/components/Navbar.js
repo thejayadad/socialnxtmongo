@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import profile from "../public/profile.png"
-import { AiFillLike, AiOutlineLike, AiOutlinePlus, AiOutlineFile } from 'react-icons/ai'
+import { AiOutlinePlus, AiOutlineFile } from 'react-icons/ai'
 
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     <Link href={'/'} className="btn btn-ghost normal-case text-xl">DonutShop</Link>
   </div>
       <div  className="mt-3 z-[1] flex">
-      <Link href={'/category'} className='btn mr-3'>Category <AiOutlineFile style={{ fontSize: "24px"}} /></Link>
+      <Link href={'/category'} className='btn mr-3'>Categories <AiOutlineFile style={{ fontSize: "24px"}} /></Link>
       <Link href={'/create-donut'} className='btn mr-3'>Create Donut <AiOutlinePlus style={{ fontSize: "24px"}} /></Link>
 
       </div>
